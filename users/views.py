@@ -7,7 +7,7 @@ from .models import User
 
 class RegisterView(View):
     def get(self, request):
-        return render(request, 'registration/register.html')
+        return render(request, 'register.html')
 
     def post(self, request):
         username = request.POST.get('username')
@@ -25,7 +25,7 @@ class RegisterView(View):
             user.save()
             login(request, user)
             return redirect('home')  # 'home' sahifaga yo'naltirishi
-        return render(request, 'registration/register.html', {'error': 'Please provide all required fields.'})
+        return render(request, 'register.html', {'error': 'Please provide all required fields.'})
 
 
 
