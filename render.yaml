@@ -1,0 +1,11 @@
+# Exported from Render on 2024-08-29T03:46:04Z
+services:
+- type: web
+  name: Recipe
+  runtime: python
+  repo: https://github.com/Salohiddin08/recipe
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: python manage.py runservser 8000
+version: "1"
