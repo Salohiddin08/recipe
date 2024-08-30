@@ -131,5 +131,5 @@ MEDIA_ROOT = 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.User'
-# CSRF_TRUSTED_ORIGINS = ['https://recipe-3-a1mz.onrender.com']
+
 
